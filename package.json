@@ -1,0 +1,28 @@
+{
+  "name": "screwdriver-cd-nodejs-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jenkins-mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tk3fftk/screwdriver-cd-nodejs-test.git"
+  },
+  "bugs": "https://github.com/screwdriver-cd/screwdriver/issues",
+  "keywords": [
+    "screwdriver",
+    "yahoo"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "tk3fftk <tktk.stereoman@gmail.com>",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.9.1",
+    "eslint-config-screwdriver": "^2.0.9",
+    "jenkins-mocha": "^3.0.0"
+  },
+  "dependencies": {}
+}
