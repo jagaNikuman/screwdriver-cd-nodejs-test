@@ -5,3 +5,9 @@ jobs:
     steps:
       - init: npm install
       - test: npm test
+      - meta_set: meta set gopher dojo
+  test:
+    requires: [ test ]
+    image: golang:latest
+    steps:
+      - meta_get: meta get gopher
